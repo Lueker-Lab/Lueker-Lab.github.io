@@ -154,6 +154,21 @@
     .card p { margin: 0 0 14px; font-size: 14px; color: var(--muted); }
     .card .url { font-size: 13px; color: var(--accent); }
 
+    /* Foundations archive */
+    .sec-head p a { color: var(--accent); }
+    .archive { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+    @media (max-width: 600px) { .archive { grid-template-columns: 1fr; } }
+    .archive .item { padding: 24px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); display: flex; flex-direction: column; }
+    .archive .yr { font: 500 13px/1 var(--serif); color: var(--accent); }
+    .archive h4 { margin: 10px 0 6px; font: 600 16px/1.3 var(--sans); }
+    .archive p { margin: 0 0 16px; font-size: 14px; color: var(--ink-2); flex: 1; }
+    .archive .row { display: flex; gap: 14px; align-items: baseline; font-size: 13px; flex-wrap: wrap; }
+    .archive .stack { color: var(--muted); margin-right: auto; }
+    .archive .row a { color: var(--accent); text-decoration: none; font-weight: 500; }
+    .archive .row a:hover { text-decoration: underline; }
+    .more { margin: 24px 0 0; font-size: 14px; }
+    .more a { color: var(--accent); text-decoration: none; font-weight: 500; }
+
     /* Principles */
     .principles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
     @media (max-width: 860px) { .principles { grid-template-columns: 1fr; gap: 28px; } }
@@ -180,6 +195,7 @@
     <a class="mark" href="#">Charles Lueker</a>
     <nav aria-label="Primary">
       <a href="#work">Work</a>
+      <a class="hide-sm" href="#foundations">Foundations</a>
       <a class="hide-sm" href="#approach">Approach</a>
       <a href="#contact">Contact</a>
       <button class="theme-toggle" id="theme" type="button" aria-label="Toggle color theme">
@@ -323,6 +339,86 @@
     </div>
   </section>
 
+  <section id="foundations" aria-labelledby="foundations-title" style="padding-top: 0">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="eyebrow">Foundations · 2015–2021</div>
+          <h2 id="foundations-title">Where it started</h2>
+        </div>
+        <p>Earlier projects from my <a href="https://github.com/Luekerc" target="_blank" rel="noopener">Luekerc</a> GitHub account, spanning the jQuery, AngularJS, Backbone and MEAN era through modern Angular.</p>
+      </div>
+      <div class="archive">
+        <article class="item">
+          <div class="yr">2021</div>
+          <h4>Star Wars People</h4>
+          <p>Angular CLI app with Angular Material, consuming the Star Wars API.</p>
+          <div class="row"><span class="stack">Angular · TypeScript · Angular Material</span>
+            <a href="https://github.com/Luekerc/StarWarsPeople" target="_blank" rel="noopener">Source</a></div>
+        </article>
+        <article class="item">
+          <div class="yr">2016</div>
+          <h4>MEAN Dashboard</h4>
+          <p>Full-stack dashboard on MongoDB, Express, AngularJS and Node.</p>
+          <div class="row"><span class="stack">MongoDB · Express · AngularJS · Node</span>
+            <a href="https://github.com/Luekerc/MEAN-Dashboard" target="_blank" rel="noopener">Source</a></div>
+        </article>
+        <article class="item">
+          <div class="yr">2015</div>
+          <h4>Excel to Form</h4>
+          <p>Document automation that reads spreadsheet data and fills out PDF and Word forms.</p>
+          <div class="row"><span class="stack">Automation · PDF · Word</span>
+            <a href="https://github.com/Luekerc/Excel-to-Form" target="_blank" rel="noopener">Source</a></div>
+        </article>
+        <article class="item">
+          <div class="yr">2015</div>
+          <h4>Slot Machine</h4>
+          <p>Mobile-ready slot machine game with a responsive layout, built with jQuery.</p>
+          <div class="row"><span class="stack">JavaScript · jQuery · CSS</span>
+            <a href="https://luekerc.github.io/Slot-Machine/" target="_blank" rel="noopener">Live</a>
+            <a href="https://github.com/Luekerc/Slot-Machine" target="_blank" rel="noopener">Source</a></div>
+        </article>
+        <article class="item">
+          <div class="yr">2015</div>
+          <h4>Thirteen JavaScript Functions</h4>
+          <p>Interactive showcase of string and array algorithms written in plain JavaScript.</p>
+          <div class="row"><span class="stack">JavaScript</span>
+            <a href="https://luekerc.github.io/Thirteen-Javascript-Functions/" target="_blank" rel="noopener">Live</a>
+            <a href="https://github.com/Luekerc/Thirteen-Javascript-Functions" target="_blank" rel="noopener">Source</a></div>
+        </article>
+        <article class="item">
+          <div class="yr">2015</div>
+          <h4>Movie Watchlist</h4>
+          <p>Searches the OMDb API and tracks titles across to-watch and watched lists.</p>
+          <div class="row"><span class="stack">JavaScript · jQuery · REST API</span>
+            <a href="https://github.com/Luekerc/IMDb-API" target="_blank" rel="noopener">Source</a></div>
+        </article>
+        <article class="item">
+          <div class="yr">2015</div>
+          <h4>Google Maps Explorer</h4>
+          <p>Location search and mapping built on the Google Maps and Places APIs.</p>
+          <div class="row"><span class="stack">JavaScript · Google Maps API</span>
+            <a href="https://github.com/Luekerc/Google-Maps-API" target="_blank" rel="noopener">Source</a></div>
+        </article>
+        <article class="item">
+          <div class="yr">2015</div>
+          <h4>Angular Data Table</h4>
+          <p>Searchable, sortable table of U.S. states built with AngularJS and Underscore.</p>
+          <div class="row"><span class="stack">AngularJS · Underscore</span>
+            <a href="https://github.com/Luekerc/Angular-Table" target="_blank" rel="noopener">Source</a></div>
+        </article>
+        <article class="item">
+          <div class="yr">2015</div>
+          <h4>Image Board</h4>
+          <p>Post-and-browse image board built on the AngularJS framework.</p>
+          <div class="row"><span class="stack">AngularJS</span>
+            <a href="https://github.com/Luekerc/Image-Board" target="_blank" rel="noopener">Source</a></div>
+        </article>
+      </div>
+      <p class="more"><a href="https://github.com/Luekerc?tab=repositories" target="_blank" rel="noopener">All repositories on github.com/Luekerc →</a></p>
+    </div>
+  </section>
+
   <section id="approach" class="band" aria-labelledby="approach-title">
     <div class="wrap">
       <div class="sec-head">
@@ -359,6 +455,7 @@
       <div class="cta">
         <a class="btn primary" href="mailto:charles.lueker@gmail.com">charles.lueker@gmail.com</a>
         <a class="btn" href="https://github.com/Lueker-Lab" target="_blank" rel="noopener">github.com/Lueker-Lab</a>
+        <a class="btn" href="https://github.com/Luekerc" target="_blank" rel="noopener">github.com/Luekerc</a>
       </div>
     </div>
   </section>
